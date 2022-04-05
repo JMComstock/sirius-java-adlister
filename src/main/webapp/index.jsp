@@ -1,15 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: jason
-  Date: 3/31/22
-  Time: 1:56 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <jsp:include page="partials/header.jsp">
+    <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Welcome to my site!" />
     </jsp:include>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -19,7 +12,6 @@
     <title>Adlister</title>
 </head>
 <style>
-
     .container-fluid {
         background-image: linear-gradient(#495159, #A1E8CC, #C5DECD, #E5D4C0, #FAC9B8);
     }
@@ -30,8 +22,8 @@
     }
     .glow {
         font-family: 'Inspiration', cursive;
-        font-size: 7em;
-        color: #f50505;
+        font-size: 10em;
+        color: #ffffff;
         -webkit-animation: glow 1s ease-in-out infinite alternate;
         -moz-animation: glow 1s ease-in-out infinite alternate;
         animation: glow 1s ease-in-out infinite alternate;
@@ -46,18 +38,17 @@
             0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
         }
     }
-
 </style>
 <body>
 
     <div class="container-fluid">
 
-        <jsp:include page="partials/navbar.jsp" />
-
+        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
         <div class="main glow">
-            <p>Welcome to the Adlister!</p>
+            <h1>Welcome to the Adlister!</h1>
         </div>
 
     </div>
+
 </body>
 </html>
