@@ -1,3 +1,5 @@
+![](AdLister.gif)
+
 An Adlisting project to show Java™ FullStack capabilities utilizing CRUD commands 
 
 ### Servlets
